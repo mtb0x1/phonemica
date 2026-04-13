@@ -1,0 +1,45 @@
+[package]
+name = "phonemica"
+version = "0.1.0"
+edition = "2024"
+description = "another phonemizer, default English text"
+license = "TBD"
+
+[dependencies]
+once_cell = "1.19"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+ureq = "2.9"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2"
+
+[dev-dependencies]
+tempfile = "3.10"
+
+[target.'cfg(target_arch = "wasm32")'.dev-dependencies]
+wasm-bindgen-test = "0.3.68"
+web-sys = { version = "0.3", features = ["console"] }
+
+[build-dependencies]
+ureq = "2.9"
+
+[[test]]
+name = "integration_tests"
+path = "tests/integration_tests.rs"
+
+[[test]]
+name = "wasm_tests"
+path = "tests/wasm_tests.rs"
+
+[[example]]
+name = "simple_example"
+path = "examples/simple_example.rs"
+
+[lib]
+name = "phonemica"
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+lto = true
+opt-level = 3
