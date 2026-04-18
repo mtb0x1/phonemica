@@ -52,7 +52,9 @@ jobs:
 
       - name: Test
         if: ${{ !matrix.use-cross }}
-        run: cargo test --target ${{ matrix.target }} --verbose
+        run: |
+          cargo test --target ${{ matrix.target }} --verbose
+          cargo test --test espeak_ng --target ${{ matrix.target }} --verbose -- --no-capture
 
       - name: Build (cross)
         if: matrix.use-cross

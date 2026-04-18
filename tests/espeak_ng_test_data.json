@@ -1,0 +1,430 @@
+[
+  {
+    "expected": "həlˈəʊ wˈɜːld",
+    "text": "hello world"
+  },
+  {
+    "expected": "ðə kwˈɪk bɹˈaʊn fˈɒks dʒˈʌmps ˌəʊvə ðə lˈeɪzi dˈɒɡ",
+    "text": "the quick brown fox jumps over the lazy dog"
+  },
+  {
+    "expected": "hˌaʊ ɑː juː tədˈeɪ",
+    "text": "how are you today"
+  },
+  {
+    "expected": "ˈaɪ lˈʌv lˈɜːnɪŋ ˈɪŋɡlɪʃ pɹənˌənsɪˈeɪʃən",
+    "text": "i love learning english pronunciation"
+  },
+  {
+    "expected": "wɒt ɪz jɔː nˈeɪm",
+    "text": "what is your name"
+  },
+  {
+    "expected": "nˈaɪs tuː mˈiːt juː",
+    "text": "nice to meet you"
+  },
+  {
+    "expected": "ɡˈʊd mˈɔːnɪŋ",
+    "text": "good morning"
+  },
+  {
+    "expected": "ɡˈʊd ˌaftənˈuːn",
+    "text": "good afternoon"
+  },
+  {
+    "expected": "ɡˈʊd ˈiːvnɪŋ",
+    "text": "good evening"
+  },
+  {
+    "expected": "ɡˈʊd nˈaɪt",
+    "text": "good night"
+  },
+  {
+    "expected": "θˈank juː vˈɛɹi mˈʌtʃ",
+    "text": "thank you very much"
+  },
+  {
+    "expected": "juː ɑː wˈɛlkəm",
+    "text": "you are welcome"
+  },
+  {
+    "expected": "pˈeɪz ɐnd θˈank juː",
+    "text": "please and thank you"
+  },
+  {
+    "expected": "ɛkskjˈuːs mˌiː",
+    "text": "excuse me"
+  },
+  {
+    "expected": "ˈaɪ ɐm sˈɒɹi",
+    "text": "i am sorry"
+  },
+  {
+    "expected": "dˈuː juː ˌəndə",
+    "text": "do you understand"
+  },
+  {
+    "expected": "ˈaɪ ˌəndə",
+    "text": "i understand"
+  },
+  {
+    "expected": "ˈaɪ dˈuː nˌət ˌəndə",
+    "text": "i do not understand"
+  },
+  {
+    "expected": "kɐn juː hˈɛlp mˌiː",
+    "text": "can you help me"
+  },
+  {
+    "expected": "wˌeə ɪz ðə bˈaθɹuːm",
+    "text": "where is the bathroom"
+  },
+  {
+    "expected": "ˈaɪ nˈiːd sˌəm wˈɔːtə",
+    "text": "i need some water"
+  },
+  {
+    "expected": "ðə wˈɛðə ɪz nˈaɪs tədˈeɪ",
+    "text": "the weather is nice today"
+  },
+  {
+    "expected": "ɪtʰ ɪz ˈeɪ bjˈuːtɪf dˈeɪ",
+    "text": "it is a beautiful day"
+  },
+  {
+    "expected": "ˈaɪ lˈaɪk tuː ɹˈiːd bˈʊks",
+    "text": "i like to read books"
+  },
+  {
+    "expected": "ʃiː sˈɛlz sˈiːʃɛlz baɪ ðə sˈiːʃɔː",
+    "text": "she sells seashells by the seashore"
+  },
+  {
+    "expected": "pˈiːtə pˈaɪpə pˈɪkt ˈeɪ pˈɛk ɒv pˈɪkt pˈɛpəz",
+    "text": "peter piper picked a peck of pickled peppers"
+  },
+  {
+    "expected": "hˌaʊ mˈʌtʃ wˈʊd wʊd ˈeɪ wˈʊdtʃək tʃˈʌk",
+    "text": "how much wood would a woodchuck chuck"
+  },
+  {
+    "expected": "ʃˈiːlə ˈeɪt θˈɜːtɪsˌɪks θˈɪmbz",
+    "text": "sheila ate thirty-six thimbles"
+  },
+  {
+    "expected": "ðə ɹˈeɪn ɪn spˈeɪn stˈeɪz mˈeɪnli ɪn ðə plˈeɪn",
+    "text": "the rain in spain stays mainly in the plain"
+  },
+  {
+    "expected": "ɹˈɛd lˈɒɹi jˈɛləʊ lˈɒɹi",
+    "text": "red lorry yellow lorry"
+  },
+  {
+    "expected": "juːnˈiːk njˈuː jˈɔːk",
+    "text": "unique new york"
+  },
+  {
+    "expected": "ðə θˈɜːd θˈɪŋ",
+    "text": "the third thing"
+  },
+  {
+    "expected": "ˈaɪ sˈɔː ˈeɪ kˈɪtɛn",
+    "text": "i saw a kitten"
+  },
+  {
+    "expected": "ðə kˈat ɪz sˈɛpɪŋ",
+    "text": "the cat is sleeping"
+  },
+  {
+    "expected": "ðə dˈɒɡ bˈɑːks lˈaʊdli",
+    "text": "the dog barks loudly"
+  },
+  {
+    "expected": "bˈɜːdz flˈaɪ ɪn ðə ski",
+    "text": "birds fly in the sky"
+  },
+  {
+    "expected": "fˈɪʃ swˈɪm ɪn ðə wˈɔːtə",
+    "text": "fish swim in the water"
+  },
+  {
+    "expected": "tʃˈɪldɹɛn plˈeɪ ɪn ðə pˈɑːk",
+    "text": "children play in the park"
+  },
+  {
+    "expected": "ðə sˈʌn ɹˈaɪsɪz ɪn ðə ˈiːst",
+    "text": "the sun rises in the east"
+  },
+  {
+    "expected": "ðə mˈuːn ʃˈaɪnz ɐtʰ nˈaɪt",
+    "text": "the moon shines at night"
+  },
+  {
+    "expected": "stˈɑːz twˈɪnk ɪn ðə dˈɑːknəs",
+    "text": "stars twinkle in the darkness"
+  },
+  {
+    "expected": "tˈaɪm flˈaɪz lˈaɪk an ˈaɹəʊ",
+    "text": "time flies like an arrow"
+  },
+  {
+    "expected": "mˈʌni dˈʌz nˌət ɡɹˈəʊ ˌɒn tɹˈiːz",
+    "text": "money does not grow on trees"
+  },
+  {
+    "expected": "ˈakʃənz spˈiːk lˈaʊdə ðɐn wˈɜːdz",
+    "text": "actions speak louder than words"
+  },
+  {
+    "expected": "ˈeɪ pˈɛni fɔː jɔː θˈɔːts",
+    "text": "a penny for your thoughts"
+  },
+  {
+    "expected": "bɹˈeɪk ˈeɪ lˈɛɡ",
+    "text": "break a leg"
+  },
+  {
+    "expected": "bˈaɪt ðə bˈʊlɪt",
+    "text": "bite the bullet"
+  },
+  {
+    "expected": "bˈɜːn ðə mˈɪdnaɪt ˈɔɪl",
+    "text": "burn the midnight oil"
+  },
+  {
+    "expected": "kˈatʃ maɪ bɹˈɛθ",
+    "text": "catch my breath"
+  },
+  {
+    "expected": "kˈʌt tuː ðə tʃˈeɪs",
+    "text": "cut to the chase"
+  },
+  {
+    "expected": "hˈɪt ðə nˈeɪl ˌɒn ðə hˈɛd",
+    "text": "hit the nail on the head"
+  },
+  {
+    "expected": "kˈɪl tˈuː bˈɜːdz wɪð wˈɒn stˈəʊn",
+    "text": "kill two birds with one stone"
+  },
+  {
+    "expected": "lˈɛt ðə kˈat ˈaʊt ɒv ðə bˈaɡ",
+    "text": "let the cat out of the bag"
+  },
+  {
+    "expected": "wˈʌns ɪn ˈeɪ blˈuː mˈuːn",
+    "text": "once in a blue moon"
+  },
+  {
+    "expected": "ˌəʊvə ðə mˈuːn",
+    "text": "over the moon"
+  },
+  {
+    "expected": "pˈiːs ɒv kˈeɪk",
+    "text": "piece of cake"
+  },
+  {
+    "expected": "ɹˈeɪn kˈats ɐnd dˈɒɡz",
+    "text": "rain cats and dogs"
+  },
+  {
+    "expected": "ðə bˈɔːl ɪz ɪn jɔː kˈɔːt",
+    "text": "the ball is in your court"
+  },
+  {
+    "expected": "ðə bˈɛst θˈɪŋz ɪn lˈaɪf ɑː fɹˈiː",
+    "text": "the best things in life are free"
+  },
+  {
+    "expected": "ðeə ɪz nˈəʊ sˈʌtʃ θˈɪŋ ɐz ˈeɪ fɹˈiː lˈʌntʃ",
+    "text": "there is no such thing as a free lunch"
+  },
+  {
+    "expected": "tˈaɪm ɪz mˈʌni",
+    "text": "time is money"
+  },
+  {
+    "expected": "wɛn pˈɪɡz flˈaɪ",
+    "text": "when pigs fly"
+  },
+  {
+    "expected": "juː kɐn nˌət dʒˈʌdʒ ˈeɪ bˈʊk baɪ ɪts kˈʌvə",
+    "text": "you can not judge a book by its cover"
+  },
+  {
+    "expected": "ˈeɪ bˈɜːd ɪn ðə hˈand ɪz wˈɜːθ tˈuː ɪn ðə bˈʊʃ",
+    "text": "a bird in the hand is worth two in the bush"
+  },
+  {
+    "expected": "an ˈap ˈeɪ dˈeɪ kˈiːps ðə dˈɒktə ɐwˈeɪ",
+    "text": "an apple a day keeps the doctor away"
+  },
+  {
+    "expected": "bˈɛtə lˈeɪt ðɐn nˈɛvə",
+    "text": "better late than never"
+  },
+  {
+    "expected": "kˈan hˈandz wˈɜːkɪŋ",
+    "text": "clean hands working"
+  },
+  {
+    "expected": "dˈuː nˌət kˈaʊnt jɔː tʃˈɪkɪnz bɪfˌɔː ðeɪ hˈatʃ",
+    "text": "do not count your chickens before they hatch"
+  },
+  {
+    "expected": "ˈɛvɹɪ klˈaʊd hˈaz ˈeɪ sˈɪlvə lˈɪnɪŋ",
+    "text": "every cloud has a silver lining"
+  },
+  {
+    "expected": "fˈɔːtʃuːn fˈeɪvɔːz ðə bˈəʊld",
+    "text": "fortune favors the bold"
+  },
+  {
+    "expected": "ɡˈʊd θˈɪŋz kˈʌm tuː ðəʊz hˌuː wˈeɪt",
+    "text": "good things come to those who wait"
+  },
+  {
+    "expected": "hˈəʊm ɪz wˌeə ðə hˈɑːt ɪz",
+    "text": "home is where the heart is"
+  },
+  {
+    "expected": "ɪf ɐtʰ fˈɜːst juː dˈuː nˌət səksˈiːd tɹˈaɪ tɹˈaɪ ɐɡˈɛn",
+    "text": "if at first you do not succeed try try again"
+  },
+  {
+    "expected": "nˈɒlɪdʒ ɪz pˈaʊə",
+    "text": "knowledge is power"
+  },
+  {
+    "expected": "lˈaftə ɪz ðə bˈɛst mˈɛdsən",
+    "text": "laughter is the best medicine"
+  },
+  {
+    "expected": "lˈaɪf ɪz wɒt hˈapɛnz wɛn juː ɑː bˈɪzi mˈakɪŋ ˈʌðə plˈanz",
+    "text": "life is what happens when you are busy making other plans"
+  },
+  {
+    "expected": "nˈɛvə sˈeɪ nˈɛvə",
+    "text": "never say never"
+  },
+  {
+    "expected": "nˈəʊ pˈeɪn nˈəʊ ɡˈeɪn",
+    "text": "no pain no gain"
+  },
+  {
+    "expected": "nˈʌθɪŋ ɪz ɪmpˈɒsɪb",
+    "text": "nothing is impossible"
+  },
+  {
+    "expected": "pɹˈaktɪs mˈeɪks pˈɜːfɛkt",
+    "text": "practice makes perfect"
+  },
+  {
+    "expected": "ɹˈəʊm wəz nˌət bˈɪlt ɪn ˈeɪ dˈeɪ",
+    "text": "Rome was not built in a day"
+  },
+  {
+    "expected": "sˈiːɪŋ ɪz bɪlˈiːvɪŋ",
+    "text": "seeing is believing"
+  },
+  {
+    "expected": "slˈəʊ ɐnd stˈɛdi wˈɪnz ðə ɹˈeɪs",
+    "text": "slow and steady wins the race"
+  },
+  {
+    "expected": "ðə ˈɜːlɪ bˈɜːd kˈatʃɪz ðə wˈɜːm",
+    "text": "the early bird catches the worm"
+  },
+  {
+    "expected": "ðə pɹˈuːf ɒv ðə pˈʌdɪŋ ɪz ɪn ðə ˈiːtɪŋ",
+    "text": "the proof of the pudding is in the eating"
+  },
+  {
+    "expected": "ðeə ɪz nˈəʊ plˈeɪs lˈaɪk hˈəʊm",
+    "text": "there is no place like home"
+  },
+  {
+    "expected": "təmˈɒɹəʊ ɪz ɐnˈʌðə dˈeɪ",
+    "text": "tomorrow is another day"
+  },
+  {
+    "expected": "tɹˈuːθ ɪz stɹˈeɪndʒə ðɐn fˈɪkʃən",
+    "text": "truth is stranger than fiction"
+  },
+  {
+    "expected": "wɒt ɡəʊz ˌəp mˈʌst kˈʌm dˈaʊn",
+    "text": "what goes up must come down"
+  },
+  {
+    "expected": "juː wˈɪn sˌəm juː lˈuːz sˌəm",
+    "text": "you win some you lose some"
+  },
+  {
+    "expected": "ˈɔːl ðɐt ɡlˈɪtəz ɪz nˌət ɡˈəʊld",
+    "text": "all that glitters is not gold"
+  },
+  {
+    "expected": "bjˈuːti ɪz ɪn ðə ˈaɪ ɒv ðə bɪhˈəʊldə",
+    "text": "beauty is in the eye of the beholder"
+  },
+  {
+    "expected": "kˈanət sˈiː ðə fˈɒɹɪst fɔː ðə tɹˈiːz",
+    "text": "cannot see the forest for the trees"
+  },
+  {
+    "expected": "dˈuː nˌət pˌʊt ˈɔːl jɔː ˈɛɡz ɪn wˈɒn bˈaskɪt",
+    "text": "do not put all your eggs in one basket"
+  },
+  {
+    "expected": "ˈiːzi kˈʌm ˈiːzi ɡˈəʊ",
+    "text": "easy come easy go"
+  },
+  {
+    "expected": "ˈɛvɹɪ ɹˈəʊz hˈaz ɪts θˈɔːn",
+    "text": "every rose has its thorn"
+  },
+  {
+    "expected": "fˈɒləʊ jɔː hˈɑːt",
+    "text": "follow your heart"
+  },
+  {
+    "expected": "ɡɹˈeɪt mˈaɪndz θˈɪnk ɐlˈaɪk",
+    "text": "great minds think alike"
+  },
+  {
+    "expected": "ˈɒnɪsti ɪz ðə bˈɛst pˈɒlɪsi",
+    "text": "honesty is the best policy"
+  },
+  {
+    "expected": "ɪtʰ ɪz nˈɛvə tˈuː lˈeɪt tuː lˈɜːn",
+    "text": "it is never too late to learn"
+  },
+  {
+    "expected": "kˈiːp jɔː tʃˈɪn ˈʌp",
+    "text": "keep your chin up"
+  },
+  {
+    "expected": "lˈʊk ˌɒn ðə bɹˈaɪt sˈaɪd",
+    "text": "look on the bright side"
+  },
+  {
+    "expected": "nˈɛvə ɡˈɪv ˈʌp",
+    "text": "never give up"
+  },
+  {
+    "expected": "wˈɒn stˈɛp ɐtʰ ˈeɪ tˈaɪm",
+    "text": "one step at a time"
+  },
+  {
+    "expected": "pˈeɪʃəns ɪz ˈeɪ vˈɜːtʃuː",
+    "text": "patience is a virtue"
+  },
+  {
+    "expected": "wˌeə ðeə ɪz ˈeɪ wɪl ðeə ɪz ˈeɪ wˈeɪ",
+    "text": "where there is a will there is a way"
+  },
+  {
+    "expected": "juː ɑː nˈɛvə tˈuː ˈəʊld tuː lˈɜːn",
+    "text": "you are never too old to learn"
+  }
+]
