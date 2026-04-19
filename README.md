@@ -8,7 +8,7 @@ Phonemica is an experimental phonemizer designed for English (US/GB) text-to-pho
 ## Features
 
 - **Multi-target Support**: Compiles to both **Native** and **WASM** targets.
-- **eSpeak-ng Integration**: Leverages linguistic data from the [eSpeak-ng](https://github.com/espeak-ng/espeak-ng) project (specifically `en_rules` and `en_list`).
+- **eSpeak-ng Integration (kinda ? think of this like maserati vs lada)**: Leverages linguistic data from the [eSpeak-ng](https://github.com/espeak-ng/espeak-ng) project (specifically `en_rules` and `en_list`).
 - **English Support**: Currently under testing for English (US/GB).
 
 ## Architecture
