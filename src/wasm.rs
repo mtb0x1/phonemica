@@ -82,7 +82,7 @@ impl Phonemizer {
     ///
     /// # Returns
     /// The phonemized text
-    pub fn phonemize(&self, text: &str) -> String {
+    pub fn phonemize_text(&self, text: &str) -> String {
         self.inner.phonemize_text(text)
     }
 

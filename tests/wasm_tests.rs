@@ -68,7 +68,7 @@ mod wasm_phonemization {
     #[wasm_bindgen_test]
     fn test_wasm_phonemize_single_word() {
         let phonemizer = Phonemizer::new().unwrap();
-        let result = phonemizer.phonemize("hello");
+        let result = phonemizer.phonemize_text("hello");
 
         assert!(
             !result.is_empty(),
@@ -80,7 +80,7 @@ mod wasm_phonemization {
     #[wasm_bindgen_test]
     fn test_wasm_phonemize_empty_string() {
         let phonemizer = Phonemizer::new().unwrap();
-        let result = phonemizer.phonemize("");
+        let result = phonemizer.phonemize_text("");
 
         assert_eq!(result, "", "Empty input should produce empty output");
     }
@@ -88,7 +88,7 @@ mod wasm_phonemization {
     #[wasm_bindgen_test]
     fn test_wasm_phonemize_multiple_words() {
         let phonemizer = Phonemizer::new().unwrap();
-        let result = phonemizer.phonemize("hello world");
+        let result = phonemizer.phonemize_text("hello world");
 
         assert!(
             !result.is_empty(),
@@ -110,7 +110,7 @@ mod wasm_phonemization {
         ];
 
         for test_case in test_cases {
-            let result = phonemizer.phonemize(test_case);
+            let result = phonemizer.phonemize_text(test_case);
             assert!(
                 !result.is_empty(),
                 "Should handle: '{}'",
@@ -135,7 +135,7 @@ mod wasm_phonemization {
         ];
 
         for word in common_words {
-            let result = phonemizer.phonemize(word);
+            let result = phonemizer.phonemize_text(word);
             assert!(
                 !result.is_empty(),
                 "Should phonemize: '{}'",
@@ -149,9 +149,9 @@ mod wasm_phonemization {
     fn test_wasm_phonemize_case_sensitivity() {
         let phonemizer = Phonemizer::new().unwrap();
 
-        let lowercase = phonemizer.phonemize("hello");
-        let uppercase = phonemizer.phonemize("HELLO");
-        let mixed = phonemizer.phonemize("HeLLo");
+        let lowercase = phonemizer.phonemize_text("hello");
+        let uppercase = phonemizer.phonemize_text("HELLO");
+        let mixed = phonemizer.phonemize_text("HeLLo");
 
         assert!(
             !lowercase.is_empty() && !uppercase.is_empty() && !mixed.is_empty(),
@@ -168,7 +168,7 @@ mod wasm_phonemization {
              This is a longer test sentence with multiple words. \
              Let's see how the phonemizer handles extended text input.";
 
-        let result = phonemizer.phonemize(long_text);
+        let result = phonemizer.phonemize_text(long_text);
 
         assert!(
             !result.is_empty(),
@@ -183,7 +183,7 @@ mod wasm_phonemization {
         let phonemizer = Phonemizer::new().unwrap();
 
         let special_text = "café naïve résumé";
-        let result = phonemizer.phonemize(special_text);
+        let result = phonemizer.phonemize_text(special_text);
 
         assert!(
             !result.is_empty(),
@@ -196,8 +196,8 @@ mod wasm_phonemization {
         let phonemizer = Phonemizer::new().unwrap();
 
         let word = "philosophy";
-        let result1 = phonemizer.phonemize(word);
-        let result2 = phonemizer.phonemize(word);
+        let result1 = phonemizer.phonemize_text(word);
+        let result2 = phonemizer.phonemize_text(word);
 
         assert_eq!(
             result1, result2,
@@ -294,8 +294,8 @@ mod wasm_integration {
         let phonemizer1 = Phonemizer::new().unwrap();
         let phonemizer2 = Phonemizer::new().unwrap();
 
-        let result1 = phonemizer1.phonemize("hello");
-        let result2 = phonemizer2.phonemize("hello");
+        let result1 = phonemizer1.phonemize_text("hello");
+        let result2 = phonemizer2.phonemize_text("hello");
 
         assert_eq!(
             result1, result2,
@@ -310,8 +310,8 @@ mod wasm_integration {
         let word1 = "first";
         let word2 = "second";
 
-        let result1 = phonemizer.phonemize(word1);
-        let result2 = phonemizer.phonemize(word2);
+        let result1 = phonemizer.phonemize_text(word1);
+        let result2 = phonemizer.phonemize_text(word2);
 
         assert!(!result1.is_empty() && !result2.is_empty(),
             "Phonemizer state should persist across multiple calls");
@@ -328,7 +328,7 @@ mod wasm_integration {
 
         let mut results = Vec::new();
         for word in &words {
-            results.push(phonemizer.phonemize(word));
+            results.push(phonemizer.phonemize_text(word));
         }
 
         assert_eq!(
@@ -360,7 +360,7 @@ mod wasm_performance {
 
         // Perform multiple phonemizations
         for _ in 0..10 {
-            let result = phonemizer.phonemize(word);
+            let result = phonemizer.phonemize_text(word);
             assert!(!result.is_empty(), "Should phonemize consistently");
         }
 
@@ -384,7 +384,7 @@ mod wasm_performance {
         ];
 
         for word in words {
-            let result = phonemizer.phonemize(word);
+            let result = phonemizer.phonemize_text(word);
             assert!(
                 !result.is_empty(),
                 "Should phonemize word of length {}",
