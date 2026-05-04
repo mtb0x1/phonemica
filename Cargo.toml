@@ -27,6 +27,7 @@ wasm-bindgen-test = "0.3.68"
 web-sys = { version = "0.3", features = ["console"] }
 
 [build-dependencies]
+cc = "*"
 ureq = "2.9"
 
 

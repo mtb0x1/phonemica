@@ -1,0 +1,27 @@
+CXX      := "clang++"
+CXXSTD   := "-std=c++17"
+CXXWARN  := "-Wall -Wextra -Wpedantic"
+WASM_SDK := "/media/msist/data/wasi-sdk-33.0-x86_64-linux"
+WASM_TGT := "--target=wasm32-wasi"
+WASM_SYS := "--sysroot=" + WASM_SDK + "/share/wasi-sysroot"
+WASM_EX  := "-fno-exceptions -fno-rtti"
+RES      := "../../../resources"
+
+# Compile both translation units for wasm32 (compile-only; link is the Rust build's job).
+wasm:
+    {{WASM_SDK}}/bin/clang++ {{WASM_TGT}} {{WASM_SYS}} {{WASM_EX}} {{CXXSTD}} {{CXXWARN}} -c phonemizer.cpp -o phonemizer.wasm.o
+    {{WASM_SDK}}/bin/clang++ {{WASM_TGT}} {{WASM_SYS}} {{WASM_EX}} {{CXXSTD}} {{CXXWARN}} -c bridge.cpp     -o bridge.wasm.o
+
+# Build native test binary.
+native:
+    {{CXX}} {{CXXSTD}} {{CXXWARN}} -O2 -c phonemizer.cpp  -o phonemizer.o
+    {{CXX}} {{CXXSTD}} {{CXXWARN}} -O2 -c bridge.cpp      -o bridge.o
+    {{CXX}} {{CXXSTD}} -O2 phonemizer.o bridge.o test_native.cpp -o test_native
+
+# Build and run native tests.
+test: native
+    ./test_native "{{RES}}/en_rules" "{{RES}}/en_list"
+
+# Remove all build artifacts.
+clean:
+    rm -f *.o *.a test_native
